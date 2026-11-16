@@ -1,6 +1,6 @@
 {
   "name": "diagram-studio",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Diagramas técnicos bonitos e padronizados, em SVG e PNG, com setas em ângulo reto, texto que sempre cabe e assinatura no canto.",
   "license": "MIT",
   "keywords": ["diagrama", "arquitetura", "svg", "documentacao", "adr"]

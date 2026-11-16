@@ -38,12 +38,14 @@ def carregar_json(caminho: Path) -> dict:
         return json.load(f)
 
 
-def carregar_config(estilo_arq: str | None, assinatura_arq: str | None) -> tuple[dict, dict]:
-    estilo = carregar_json(RAIZ / "config" / "estilo.json")
+def carregar_config(estilo_arq: str | None, assinatura_arq: str | None, tema: str | None = None) -> tuple[dict, dict]:
+    estilo = carregar_json(RAIZ / "config" / (f"estilo-{tema}.json" if tema else "estilo.json"))
     assinatura = carregar_json(RAIZ / "config" / "assinatura.json")
     # o usuário pode sobrescrever com arquivos próprios (no projeto ou em ~/.config)
     local = Path.home() / ".config" / "diagram-studio"
     for base, nome, alvo in [(estilo_arq, "estilo.json", estilo), (assinatura_arq, "assinatura.json", assinatura)]:
+        if tema and nome == "estilo.json" and not base:
+            continue  # tema escolhido na linha de comando vence o estilo.json do usuário
         arq = Path(base) if base else local / nome
         if arq.exists():
             alvo.update(carregar_json(arq))
@@ -301,13 +303,14 @@ def main():
     ap.add_argument("spec", help="arquivo JSON do diagrama")
     ap.add_argument("--saida", help="caminho sem extensão (padrão: ao lado do JSON)")
     ap.add_argument("--estilo", help="estilo.json próprio")
+    ap.add_argument("--tema", choices=["claro"], help="tema pronto (padrão: escuro)")
     ap.add_argument("--assinatura", help="assinatura.json própria")
     ap.add_argument("--sem-assinatura", action="store_true")
     ap.add_argument("--sem-png", action="store_true")
     args = ap.parse_args()
 
     spec = carregar_json(Path(args.spec))
-    estilo, assinatura = carregar_config(args.estilo, args.assinatura)
+    estilo, assinatura = carregar_config(args.estilo, args.assinatura, args.tema)
     if args.sem_assinatura:
         assinatura["ativa"] = False
 

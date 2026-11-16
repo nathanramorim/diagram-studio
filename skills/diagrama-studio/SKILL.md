@@ -61,7 +61,7 @@ Transforma uma ideia técnica em uma imagem simples de entender. O desenho é de
 
 ## Estilo e assinatura
 
-- `config/estilo.json`: cores e fontes. `config/assinatura.json`: nome, usuário do GitHub (para o avatar) e link.
+- `config/estilo.json`: cores e fontes do tema escuro (padrão). `--tema claro` usa `config/estilo-claro.json` (fundo branco, azul #2563eb), bom para sites e documentos claros. `config/assinatura.json`: nome, usuário do GitHub (para o avatar) e link.
 - Para usar os seus dados sem mexer no plugin, crie `~/.config/diagram-studio/assinatura.json` (e `estilo.json`, se quiser outra paleta). Esses arquivos têm prioridade.
 - O avatar é baixado de `github.com/<usuario>.png` uma vez, fica em cache em `~/.cache/diagram-studio/` e entra embutido no SVG (o GitHub não carrega imagens externas dentro de SVG). Sem rede, aparecem as iniciais. Se `avatar_arquivo` apontar para uma imagem (relativa a `config/` ou caminho absoluto), ela tem prioridade sobre o GitHub. O padrão do plugin usa `config/avatar.jpg`.
 - Sem assinatura: `{ "ativa": false }` no arquivo do usuário (vale sempre) ou `--sem-assinatura` (vale uma vez).

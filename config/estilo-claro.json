@@ -1,0 +1,20 @@
+{
+  "nome": "claro",
+  "cores": {
+    "fundo": "#ffffff",
+    "grade": "#f1f5f9",
+    "painel": "#ffffff",
+    "borda": "#dbe3ee",
+    "grupo": "#eff6ff",
+    "acento": "#2563eb",
+    "texto": "#0f172a",
+    "suave": "#475569",
+    "fraco": "#94a3b8",
+    "apagado": "#f1f5f9",
+    "apagado_borda": "#cbd5e1"
+  },
+  "fontes": {
+    "sans": "Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif",
+    "mono": "'JetBrains Mono', Consolas, 'Courier New', monospace"
+  }
+}

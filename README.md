@@ -69,6 +69,8 @@ Ou rode o script direto com um JSON seu:
 
 ```bash
 uv run scripts/diagrama.py exemplos/personas.json --saida docs/img/personas
+# tema claro, para sites e documentos de fundo branco
+uv run scripts/diagrama.py exemplos/personas.json --tema claro
 ```
 
 ### Assinatura: a minha, a sua ou nenhuma
@@ -102,6 +104,7 @@ Sem `avatar_arquivo`, o avatar é baixado uma vez de `github.com/seu-usuario.png
 
 | Versão | Novidades |
 |---|---|
+| 0.2.0 | Tema claro (`--tema claro`). Setas podem apontar para caixas declaradas depois. |
 | 0.1.0 | Primeira versão: caixas, chips, setas com âncoras, divisórias, assinatura com avatar, saída SVG e PNG. |
 
 ## Licença
