@@ -281,6 +281,10 @@ class Diagrama:
 
     def render(self) -> str:
         self.cabecalho()
+        # registra as caixas antes, para setas poderem apontar para caixas declaradas depois
+        for el in self.s.get("elementos", []):
+            if el["tipo"] == "caixa" and el.get("id"):
+                self.caixas[el["id"]] = (el["x"], el["y"], el["w"], el["h"])
         for el in self.s.get("elementos", []):
             getattr(self, el["tipo"])(el)
         self.assinatura()
