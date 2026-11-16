@@ -79,11 +79,12 @@ Crie `~/.config/diagram-studio/assinatura.json`:
 {
   "nome": "Seu Nome",
   "github": "seu-usuario",
-  "link": "https://www.linkedin.com/in/seu-usuario"
+  "link": "https://www.linkedin.com/in/seu-usuario",
+  "avatar_arquivo": ""
 }
 ```
 
-O avatar é baixado uma vez de `github.com/seu-usuario.png` e fica embutido no SVG. Para outra paleta, crie `estilo.json` na mesma pasta (veja `config/estilo.json`).
+Com `avatar_arquivo` vazio, o avatar é baixado uma vez de `github.com/seu-usuario.png`. Para usar uma foto sua, coloque o caminho dela. Em qualquer caso a imagem fica embutida no SVG. Para outra paleta, crie `estilo.json` na mesma pasta (veja `config/estilo.json`).
 
 ## Segurança e privacidade
 

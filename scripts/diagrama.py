@@ -55,8 +55,12 @@ def avatar_data_uri(assinatura: dict) -> str | None:
     O GitHub bloqueia imagens externas dentro de SVG, por isso embutimos."""
     if assinatura.get("avatar_arquivo"):
         arq = Path(assinatura["avatar_arquivo"]).expanduser()
+        if not arq.is_absolute():  # caminho relativo = dentro de config/
+            arq = RAIZ / "config" / arq
         if arq.exists():
-            return "data:image/png;base64," + base64.b64encode(arq.read_bytes()).decode()
+            mime = "image/jpeg" if arq.suffix.lower() in (".jpg", ".jpeg") else "image/png"
+            return f"data:{mime};base64," + base64.b64encode(arq.read_bytes()).decode()
+        print(f"aviso: avatar_arquivo não encontrado ({arq}); tentando o GitHub", file=sys.stderr)
     user = assinatura.get("github")
     if not user:
         return None
