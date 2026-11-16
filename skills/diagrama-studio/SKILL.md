@@ -17,12 +17,13 @@ Transforma uma ideia técnica em uma imagem simples de entender. O desenho é de
    | Personas | quem usa o quê, isolamento, permissões | `exemplos/personas.json` |
    | Fluxo | passo a passo, pipeline, requisição | combine `caixa` + `seta` em linha |
    | Camadas | frontend, API, dados, infra | caixas largas empilhadas com setas verticais |
-3. **Mostre o plano** em até 5 linhas (título, blocos principais, setas) e espere o "sim".
-4. **Escreva o JSON** em `docs/diagramas/<nome>.json` (ou onde o usuário pedir).
-5. **Gere:** `uv run <plugin>/scripts/diagrama.py docs/diagramas/<nome>.json`
+3. **Assinatura.** Se não existir `~/.config/diagram-studio/assinatura.json`, avise uma vez que o padrão é a assinatura do autor do plugin e pergunte se a pessoa quer manter, usar a dela (nome, GitHub, link e foto opcional) ou gerar sem assinatura. Grave a escolha nesse arquivo para não perguntar de novo.
+4. **Mostre o plano** em até 5 linhas (título, blocos principais, setas) e espere o "sim".
+5. **Escreva o JSON** em `docs/diagramas/<nome>.json` (ou onde o usuário pedir).
+6. **Gere:** `uv run <plugin>/scripts/diagrama.py docs/diagramas/<nome>.json`
    Sai `<nome>.svg` e `<nome>.png` ao lado do JSON. Use `--saida caminho/sem-extensao` para outro lugar.
-6. **Confira o PNG** (abra a imagem). Corrija texto apertado (o script avisa), setas cruzando caixas ou blocos desalinhados. Repita até ficar limpo.
-7. **Entregue** o SVG para README e docs, e o PNG para slides, LinkedIn e chat.
+7. **Confira o PNG** (abra a imagem). Corrija texto apertado (o script avisa), setas cruzando caixas ou blocos desalinhados. Repita até ficar limpo.
+8. **Entregue** o SVG para README e docs, e o PNG para slides, LinkedIn e chat.
 
 ## Regras de desenho
 
@@ -63,5 +64,5 @@ Transforma uma ideia técnica em uma imagem simples de entender. O desenho é de
 - `config/estilo.json`: cores e fontes. `config/assinatura.json`: nome, usuário do GitHub (para o avatar) e link.
 - Para usar os seus dados sem mexer no plugin, crie `~/.config/diagram-studio/assinatura.json` (e `estilo.json`, se quiser outra paleta). Esses arquivos têm prioridade.
 - O avatar é baixado de `github.com/<usuario>.png` uma vez, fica em cache em `~/.cache/diagram-studio/` e entra embutido no SVG (o GitHub não carrega imagens externas dentro de SVG). Sem rede, aparecem as iniciais. Se `avatar_arquivo` apontar para uma imagem (relativa a `config/` ou caminho absoluto), ela tem prioridade sobre o GitHub. O padrão do plugin usa `config/avatar.jpg`.
-- `--sem-assinatura` gera sem a faixa do rodapé.
+- Sem assinatura: `{ "ativa": false }` no arquivo do usuário (vale sempre) ou `--sem-assinatura` (vale uma vez).
 - O GitHub mostra SVG como imagem e **não carrega webfonts**: Montserrat e JetBrains Mono caem para a fonte do sistema. No PNG também, a menos que as fontes estejam instaladas.

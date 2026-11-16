@@ -71,20 +71,26 @@ Ou rode o script direto com um JSON seu:
 uv run scripts/diagrama.py exemplos/personas.json --saida docs/img/personas
 ```
 
-### Use a sua assinatura
+### Assinatura: a minha, a sua ou nenhuma
 
-Crie `~/.config/diagram-studio/assinatura.json`:
+Por padrão os diagramas saem com a minha assinatura (foto, nome e LinkedIn). Você escolhe:
+
+| Quero | Como |
+|---|---|
+| **Manter a padrão** | Não faça nada. |
+| **Usar a minha assinatura** | Crie `~/.config/diagram-studio/assinatura.json` com os seus dados (abaixo). |
+| **Sem assinatura** | No mesmo arquivo, `{ "ativa": false }`. Ou, numa vez só, `--sem-assinatura`. |
 
 ```json
 {
   "nome": "Seu Nome",
   "github": "seu-usuario",
   "link": "https://www.linkedin.com/in/seu-usuario",
-  "avatar_arquivo": ""
+  "avatar_arquivo": "/caminho/para/sua-foto.jpg"
 }
 ```
 
-Com `avatar_arquivo` vazio, o avatar é baixado uma vez de `github.com/seu-usuario.png`. Para usar uma foto sua, coloque o caminho dela. Em qualquer caso a imagem fica embutida no SVG. Para outra paleta, crie `estilo.json` na mesma pasta (veja `config/estilo.json`).
+Sem `avatar_arquivo`, o avatar é baixado uma vez de `github.com/seu-usuario.png`. Sem foto nenhuma, aparecem as suas iniciais. A imagem sempre fica embutida no SVG. Para outra paleta, crie `estilo.json` na mesma pasta (veja `config/estilo.json`).
 
 ## Segurança e privacidade
 
