@@ -1,0 +1,11 @@
+{
+  "name": "diagram-studio",
+  "owner": { "name": "diagram-studio" },
+  "plugins": [
+    {
+      "name": "diagram-studio",
+      "source": "./",
+      "description": "Diagramas técnicos bonitos e padronizados, em SVG e PNG, com a sua assinatura."
+    }
+  ]
+}

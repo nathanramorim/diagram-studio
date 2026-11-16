@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="556" viewBox="0 0 1280 556">
+<defs>
+<pattern id="g" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#1a1f2b"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#4f8ef7"/></marker>
+<marker id="ar-fraca" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="#6b7489"/></marker>
+<clipPath id="av"><circle cx="0" cy="0" r="16"/></clipPath>
+</defs>
+<rect width="1280" height="556" rx="16" fill="#0d0f14"/>
+<rect width="1280" height="556" rx="16" fill="url(#g)"/>
+<text x="56.0" y="52.0" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14.0" font-weight="400" fill="#4f8ef7" text-anchor="start" letter-spacing="2">// DECISÃO 02 · ISOLAMENTO POR PERSONA</text>
+<text x="56.0" y="88.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28.0" font-weight="800" fill="#f5f7fb" text-anchor="start">Dois frontends, uma API, separados por quem usa</text>
+<rect x="250" y="124" width="180" height="36" rx="18.0" fill="#141925" stroke="#4f8ef7" stroke-width="1.5"/>
+<text x="340.0" y="147.2" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.0" font-weight="600" fill="#f5f7fb" text-anchor="middle">cliente final</text>
+<rect x="850" y="124" width="180" height="36" rx="18.0" fill="#141925" stroke="#4f8ef7" stroke-width="1.5"/>
+<text x="940.0" y="147.2" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.8" font-weight="600" fill="#f5f7fb" text-anchor="middle">gestão do negócio</text>
+<rect x="170" y="188" width="340" height="128" rx="10" fill="#141925" stroke="#4f8ef7" stroke-width="1.5"/>
+<text x="340.0" y="257.9" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17.0" font-weight="800" fill="#f5f7fb" text-anchor="middle"></text>
+<text x="340.0" y="220.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18.0" font-weight="800" fill="#f5f7fb" text-anchor="middle">App do cliente</text>
+<rect x="245.1" y="238" width="79.0" height="30" rx="15.0" fill="#101a2e" stroke="#4f8ef7" stroke-width="1.5"/>
+<text x="284.6" y="258.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.0" font-weight="500" fill="#c3cad8" text-anchor="middle">agendar</text>
+<rect x="334.1" y="238" width="100.8" height="30" rx="15.0" fill="#101a2e" stroke="#4f8ef7" stroke-width="1.5"/>
+<text x="384.5" y="258.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.0" font-weight="500" fill="#c3cad8" text-anchor="middle">acompanhar</text>
+<text x="340.0" y="298.0" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="13.0" font-weight="500" fill="#6b7489" text-anchor="middle">estável e simples</text>
+<rect x="770" y="188" width="340" height="128" rx="10" fill="#141925" stroke="#4f8ef7" stroke-width="1.5"/>
+<text x="940.0" y="257.9" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17.0" font-weight="800" fill="#f5f7fb" text-anchor="middle"></text>
+<text x="940.0" y="220.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18.0" font-weight="800" fill="#f5f7fb" text-anchor="middle">Painel da gestão</text>
+<rect x="797.0" y="238" width="71.7" height="30" rx="15.0" fill="#101a2e" stroke="#4f8ef7" stroke-width="1.5"/>
+<text x="832.8" y="258.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.0" font-weight="500" fill="#c3cad8" text-anchor="middle">agenda</text>
+<rect x="878.7" y="238" width="71.7" height="30" rx="15.0" fill="#101a2e" stroke="#4f8ef7" stroke-width="1.5"/>
+<text x="914.5" y="258.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.0" font-weight="500" fill="#c3cad8" text-anchor="middle">equipe</text>
+<rect x="960.4" y="238" width="122.6" height="30" rx="15.0" fill="none" stroke="#4f8ef7" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="1021.7" y="258.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.0" font-weight="500" fill="#4f8ef7" text-anchor="middle">+ novo módulo</text>
+<text x="940.0" y="298.0" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="13.0" font-weight="500" fill="#6b7489" text-anchor="middle">ganha módulos novos</text>
+<path d="M640 120V330" stroke="#6b7489" stroke-width="2" stroke-dasharray="8 6"/>
+<rect x="591.7" y="209.0" width="96.6" height="28" fill="#0d0f14"/>
+<text x="640.0" y="228.0" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="13.0" font-weight="700" fill="#6b7489" text-anchor="middle">isolamento</text>
+<rect x="430" y="386" width="420" height="84" rx="10" fill="#4f8ef7" stroke="#4f8ef7" stroke-width="1.5"/>
+<text x="640.0" y="426.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20.0" font-weight="800" fill="#0d0f14" text-anchor="middle">API única</text>
+<text x="640.0" y="445.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.0" font-weight="600" fill="#0d0f14" text-anchor="middle">acesso e permissões por persona</text>
+<path d="M340.0 160.0 L340.0 186.0" fill="none" stroke="#4f8ef7" stroke-width="2" marker-end="url(#ar)"/>
+<path d="M940.0 160.0 L940.0 186.0" fill="none" stroke="#4f8ef7" stroke-width="2" marker-end="url(#ar)"/>
+<path d="M340.0 316.0 L340.0 356.0 L568.6 356.0 L568.6 384.0" fill="none" stroke="#4f8ef7" stroke-width="2" marker-end="url(#ar)"/>
+<path d="M940.0 316.0 L940.0 356.0 L711.4 356.0 L711.4 384.0" fill="none" stroke="#4f8ef7" stroke-width="2" marker-end="url(#ar)"/>
+<path d="M56 500H1224" stroke="#2a3245" stroke-width="1"/>
+<a href="https://www.linkedin.com/in/nathanramorim"><circle cx="980.2" cy="528" r="16" fill="#4f8ef7"/><text x="980.2" y="533.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.0" font-weight="800" fill="#0d0f14" text-anchor="middle">NA</text><circle cx="980.2" cy="528" r="16" fill="none" stroke="#4f8ef7" stroke-width="1.5"/><text x="1006.2" y="526.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.0" font-weight="700" fill="#f5f7fb" text-anchor="start">Nathan Amorim</text><text x="1006.2" y="542.0" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="12.0" font-weight="400" fill="#c3cad8" text-anchor="start">linkedin.com/in/nathanramorim</text></a>
+<text x="56.0" y="533.0" font-family="Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.0" font-weight="500" fill="#6b7489" text-anchor="start">regra de negócio em um lugar só · cada lado evolui sem afetar o outro</text>
+</svg>

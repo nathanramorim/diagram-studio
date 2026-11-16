@@ -1,0 +1,20 @@
+{
+  "nome": "nathan-dark",
+  "cores": {
+    "fundo": "#0d0f14",
+    "grade": "#1a1f2b",
+    "painel": "#141925",
+    "borda": "#2a3245",
+    "grupo": "#101a2e",
+    "acento": "#4f8ef7",
+    "texto": "#f5f7fb",
+    "suave": "#c3cad8",
+    "fraco": "#6b7489",
+    "apagado": "#1b1e26",
+    "apagado_borda": "#3a3f4b"
+  },
+  "fontes": {
+    "sans": "Montserrat, 'Segoe UI', Helvetica, Arial, sans-serif",
+    "mono": "'JetBrains Mono', Consolas, 'Courier New', monospace"
+  }
+}
